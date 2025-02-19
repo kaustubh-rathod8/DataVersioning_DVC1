@@ -8,8 +8,13 @@ data = {'Name': ['Alice','Bob','Charlie'],
 
 df = pd.DataFrame(data)
 
+#1st Updation
 new_row_loc = {'Name': 'GF1','Age':20, 'City':'City1'}
 df.loc[len(df.index)] = new_row_loc
+
+#2nd Updation
+new_row_loc2 = {'Name': 'GF2','Age':30, 'City':'City2'}
+df.loc[len(df.index)] = new_row_loc2
 
 data_dir = 'data'
 os.makedirs(data_dir, exist_ok=True)
